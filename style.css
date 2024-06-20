@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1 {
+  max-width: 540px;
+  width: 100%;
+  margin: 37px auto;
+  color: white;
+
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background: linear-gradient(135deg, red, blue);
+}
+.box {
+  width: 100%;
+  max-width: 540px;
+  background: #fff;
+  padding: 40px 30px 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 25px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.box h2 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.row {
+  padding: 25px;
+  background: rgba(188, 188, 188, 0.528);
+  border-radius: 20px;
+}
+
+.rowi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+#nome {
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 20px;
+  font-weight: 14px;
+  margin-bottom: 10px;
+  background-color: #002765bf;
+  border-radius: 50px;
+  color: white;
+}
+
+::placeholder {
+  color: #b7b8bf;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-top: 50px;
+  padding: 16px 0px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  width: 100%;
+  text-align: center;
+  animation: slide-out 0.4s;
+  transition: outline 0.4s;
+}
+
+button:hover {
+  outline: 10px solid #ff584534;
+}
+
+/* Styles applied when the button is clicked */
+button:active {
+  background-color: #002765;
+}
+
+
+/* Styles applied when the button is clicked and the name is invalid */
+button:active + h2 span {
+  color: red;
+  float: right;
+}
+
+span {
+  color: #ff0000;
+  font-size: 20px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {   -webkit-appearance: none;   margin: 0; }
